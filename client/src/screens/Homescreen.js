@@ -10,7 +10,7 @@ export default function Homescreen() {
 
           return <div className="col-md-4">
               <div>
-                <pizza pizza={pizza} />
+                <Pizza pizza={pizza} />
               </div>
 
             </div>
