@@ -1,4 +1,4 @@
-[
+const pizzas = [
   {
     name: "Cheese",
     size: ["small", "medium", "large"],
@@ -90,6 +90,4 @@
   },
 ];
 
-// Make change to file
-
-// Add Second Comment
+export default pizzas;
