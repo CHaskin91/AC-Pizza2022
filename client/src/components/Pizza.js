@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Pizza({ pizza }) {
+  const [quantity, setQuantity] = useState(1);
+  const [size, setSize] = useState("small");
   return (
-    <div>
+    <div
+      style={{ margin: "70px" }}
+      className="shadow-lg p-3 mb-5 bg-white rounded"
+    >
       <h1>{pizza.name}</h1>
       <img
         src={pizza.image}
@@ -11,22 +16,46 @@ export default function Pizza({ pizza }) {
       />
 
       <div className="flex-container">
-        <div className="w-100">
+        <div className="w-100 m-1">
           <p>Size</p>
-          <select>
+          <select
+            className="form-control"
+            value={size}
+            onChange={(e) => {
+              setSize(e.target.value);
+            }}
+          >
             {pizza.size.map((size) => {
               return <option value={size}>{size}</option>;
             })}
           </select>
         </div>
 
-        <div className="w-100">
+        <div className="w-100 m-1">
           <p>Quantity</p>
-          <select>
+          <select
+            className="form-control"
+            value={quantity}
+            onChange={(e) => {
+              setQuantity(e.target.value);
+            }}
+          >
             {[...Array(10).keys()].map((x, i) => {
               return <option value={i + 1}>{i + 1}</option>;
             })}
           </select>
+        </div>
+      </div>
+
+      <div className="flex-container">
+        <div className="m-1 w-100">
+          <h1 className="mt-1">
+            Price : $ {pizza.prices[0][size] * quantity}{" "}
+          </h1>
+        </div>
+
+        <div className="m-1 w-100">
+          <button className="btn">ADD TO CART</button>
         </div>
       </div>
     </div>
