@@ -19,9 +19,9 @@ export default function Homescreen() {
     <div>
       <div className="row justify-content-center">
         {loading ? (
-          <h1>loading</h1>
+          <h1>Loading...</h1>
         ) : error ? (
-          <h1>Somthing went wrong</h1>
+          <h1>Something went wrong</h1>
         ) : (
           pizzas.map((pizza) => {
             return (
