@@ -12,7 +12,7 @@ export default function Pizza({ pizza }) {
 
   return (
     <div
-      style={{ margin: "70px" }}
+      
       className="shadow-lg p-3 mb-5 bg-white rounded"
     >
       <div onClick={handleShow}>
@@ -21,6 +21,7 @@ export default function Pizza({ pizza }) {
           src={pizza.image}
           className="img-fluid"
           style={{ height: "200px", width: "200px" }}
+          alt=''
         />
       </div>
 
@@ -78,6 +79,7 @@ export default function Pizza({ pizza }) {
             src={pizza.image}
             className="img-fluid"
             style={{ height: "400px" }}
+            alt=''
           />
           <p>{pizza.description}</p>
         </Modal.Body>
