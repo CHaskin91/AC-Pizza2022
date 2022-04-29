@@ -6,6 +6,7 @@ import { deleteFromCart } from "../actions/cartActions";
 export default function Cartscreen() {
   const cartstate = useSelector((state) => state.cartReducer);
   const cartItems = cartstate.cartItems;
+  var total = cartItems.reduce((x, item) => x + item.price, 0);
   const dispatch = useDispatch();
   return (
     <div>
@@ -63,7 +64,10 @@ export default function Cartscreen() {
           })}
         </div>
 
-        <div className="col-md-4"></div>
+        <div className="col-md-4">
+          <h2 style={{ fontSize: "45px" }}>Total Price : ${total}</h2>
+          <button className="btn">Pay Now.</button>
+        </div>
       </div>
     </div>
   );
