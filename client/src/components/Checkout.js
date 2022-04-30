@@ -1,8 +1,12 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import StripeCheckout from "react-stripe-checkout";
+import { placeOrder } from "../actions/orderActions";
 export default function Checkout({ total }) {
+  const dispatch = useDispatch();
   function tokenHandler(token) {
     console.log(token);
+    dispatch(placeOrder(token, total));
   }
 
   return (
