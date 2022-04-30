@@ -9,6 +9,7 @@ export const registerUserReducer =(state={} , action) => {
         case 'USER_REGISTER_SUCCESS' :  return {
             loading:false,
             success:true
+            currentUser : action.payload
         }
         case 'USER_REGISTER_FAIL' : return {
             loading:false,
