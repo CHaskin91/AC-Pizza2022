@@ -10,9 +10,9 @@ export default function Registerscreen() {
     if (password != cpassword) {
       alert("Password did not match.");
     } else {
-      const user = { name, email, password };
+      const name = { name, email, password };
     }
-    console.log(user);
+    console.log(name);
   }
   return (
     <div>
