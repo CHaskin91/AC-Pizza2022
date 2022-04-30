@@ -11,16 +11,19 @@ export default function Registerscreen() {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const [cpassword, setcpassword] = useState("");
+
   const registerstate = useSelector((state) => state.registerUserReducer);
   const { error, loading, success } = registerstate;
+
   const dispatch = useDispatch();
   function signup() {
-    if (password !== cpassword) {
+    if (password != cpassword) {
       alert("Password did not match.");
     } else {
-      const name = { name, email, password };
+      const user = { name, email, password };
     }
-    console.log(name);
+    console.log(user);
+    dispatch(registerUser(user));
   }
   return (
     <div>
