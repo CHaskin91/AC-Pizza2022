@@ -31,7 +31,7 @@ export default function Registerscreen() {
         <div className="col-md-5 mt-5 shadow-lg p-3 mb-5 bg-white rounded">
           {loading && <Loading />}
           {success && <Success success="User Registered Successfully" />}
-          {error && <Error error="Email already registred" />}
+          {error && <Error error="Email already registered" />}
           <h2 className="text-center m-3" style={{ fontSize: "35px" }}>
             Register
           </h2>
