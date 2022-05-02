@@ -39,7 +39,7 @@ export default function Loginscreen() {
               className="form-control"
               value={email}
               onChange={(e) => {
-                setpassword(e.target.value);
+                setemail(e.target.value);
               }}
             />
             <input
