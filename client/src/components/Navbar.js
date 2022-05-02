@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { logoutUser } from "../actions/userActions";
+import { loginUser, logoutUser } from "../actions/userActions";
 export default function Navbar() {
   const cartstate = useSelector((state) => state.cartReducer);
   const userstate = useSelector((state) => state.loginUserReducer);
@@ -57,7 +57,13 @@ export default function Navbar() {
               </div>
             ) : (
               <li className="nav-item">
-                <a className="nav-link" href="/login">
+                <a
+                  className="nav-link"
+                  href="/login"
+                  onClick={() => {
+                    dispatch(loginUser());
+                  }}
+                >
                   Login
                 </a>
               </li>
