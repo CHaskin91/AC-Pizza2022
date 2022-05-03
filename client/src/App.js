@@ -11,8 +11,9 @@ import Loginscreen from "./screens/Loginscreen";
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
+
         <Route path="/" exact component={Homescreen} />
         <Route path="/cart" exact component={Cartscreen} />
         <Route path="/register" exact component={Registerscreen} />
