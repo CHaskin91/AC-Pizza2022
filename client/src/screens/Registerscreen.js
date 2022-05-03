@@ -57,7 +57,7 @@ export default function Registerscreen() {
               }}
             />
             <input
-              type="text"
+              type="password"
               placeholder="password"
               className="form-control"
               value={password}
@@ -67,7 +67,7 @@ export default function Registerscreen() {
               }}
             />
             <input
-              type="text"
+              type="password"
               placeholder="confirm password"
               className="form-control"
               value={cpassword}

@@ -11,7 +11,7 @@
 ## Links
 
 - [GitHub Repo](https://github.com/CHaskin91/AC-Pizza2022)
-- [Deployed @ Heroku](https://floating-brook-39226.herokuapp.com/)
+- [Deployed @ Heroku](https://ac-pizza.herokuapp.com/)
 
 ## Developers
 
