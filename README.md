@@ -11,7 +11,7 @@
 ## Links
 
 - [GitHub Repo](https://github.com/CHaskin91/AC-Pizza2022)
-- [Deployed @ Heroku]()
+- [Deployed @ Heroku](https://floating-brook-39226.herokuapp.com/)
 
 ## Developers
 
@@ -45,3 +45,8 @@ THEN the Total cost is adjusted accordingly.
 ```
 
 ## Stretch Goals
+
+- Add Filter Bar
+- Add Admin Sign-in functionality
+- Admin Users can add new pizzas, update orders
+- Store order details in back-end.
