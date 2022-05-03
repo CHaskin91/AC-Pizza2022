@@ -1,7 +1,7 @@
+require("dotenv").config();
 const mongoose = require("mongoose");
 
-var mongoURL =
-  "mongodb+srv://Chaskin91:Chubbs09@cluster0.venbc.mongodb.net/AC_Pizza_DB";
+var mongoURL = process.env.REACT_APP_MONGOURL;
 
 mongoose.connect(mongoURL, { useUnifiedTopology: true, useNewUrlParser: true });
 

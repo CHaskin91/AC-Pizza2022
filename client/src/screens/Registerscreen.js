@@ -21,9 +21,9 @@ export default function Registerscreen() {
       alert("Password did not match.");
     } else {
       const user = { name, email, password };
+      console.log(user);
+      dispatch(registerUser(user));
     }
-    console.log(user);
-    dispatch(registerUser(user));
   }
   return (
     <div>
