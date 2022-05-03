@@ -13,17 +13,17 @@ export default function Homescreen() {
 
   const { pizzas, error, loading } = pizzasstate;
 
-  // useEffect(() => {
-  //   dispatch("GET_PIZZAS_REQUEST"); 
-  // }, []);
+  useEffect(() => {
+    dispatch(getAllPizzas());
+  }, []);
 
   return (
     <div>
       <div className="row justify-content-center">
         {loading ? (
-          <Loading/>
+          <Loading />
         ) : error ? (
-          <Error error='Ops! Somthing went wrong!'/>
+          <Error error="Ops! Somthing went wrong!" />
         ) : (
           pizzas.map((pizza) => {
             return (
