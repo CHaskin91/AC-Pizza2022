@@ -13,9 +13,9 @@ export default function Homescreen() {
 
   const { pizzas, error, loading } = pizzasstate;
 
-  useEffect(() => {
-    dispatch(getAllPizzas());
-  }, []);
+  // useEffect(() => {
+  //   dispatch("GET_PIZZAS_REQUEST"); 
+  // }, []);
 
   return (
     <div>

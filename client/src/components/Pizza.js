@@ -54,9 +54,9 @@ export default function Pizza({ pizza }) {
               setQuantity(e.target.value);
             }}
           >
-            {[...Array(10).keys()].map((x, i) => {
+          {/* {[...Array(10).keys()].map((x, i) => {
               return <option value={i + 1}>{i + 1}</option>;
-            })}
+            })} */}
           </select>
         </div>
       </div>
