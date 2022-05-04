@@ -1,11 +1,14 @@
 # AC Pizza
 
+We set out to create a food ordering application that would use Stripe for payments. Everybody loves pizza! So we created AC Pizza! AC Pizza is a pizza ordering application designed with React, React-Redux, Express.js, Node.js, MongoDB, Axios, and Stripe.
+
 ## Table of Contents
 
 - [Links](#links)
 - [Developers](#developers)
 - [Installation](#installation)
 - [Acceptance-Criteria](#acceptance-criteria)
+- [Tech-Stack](#tech-stack)
 - [Stretch-Goals](#stretch-goals)
 
 ## Links
@@ -43,6 +46,16 @@ THEN the user can increase or decrease the quantity, or remove the pizza from th
 WHEN the quantity is increased or decreased
 THEN the Total cost is adjusted accordingly.
 ```
+
+## Tech Stack
+
+`Node.js`
+`Express.js`
+`React.js`
+`React-Redux`
+`MongoDB`
+`Stripe`
+`Heroku`
 
 ## Stretch Goals
 
